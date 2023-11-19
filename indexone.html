@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("img1.jpg");
+        background-size: cover;
+        font-family: sans-serif;
+      }
+
+      nav {
+        width: 100%;
+        height: 100px;
+        background: rgb(227, 216, 13);
+        color: wheat;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo {
+        font-size: 2em;
+        letter-spacing: 2px;
+      }
+      .menu a {
+        text-decoration: none;
+        color: rgb(17, 53, 236);
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+      .menu a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+
+        border-bottom: 2px solid indianred;
+        transition: 0.4s linear;
+      }
+      .menu a:hover:before {
+        width: 90%;
+      }
+      .register a {
+        text-decoration: none;
+        color: bisque;
+        padding: 10px 20px;
+        font-size: 20px;
+        background: indianred;
+        border-radius: 8px;
+      }
+      .h-txt {
+        max-height: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: bisque;
+      }
+      .h-txt span {
+        letter-spacing: 5px;
+      }
+      .h-txt h1 {
+        font-size: 3.5em;
+      }
+      .h-txt a {
+        text-decoration: none;
+        background: indianred;
+        color: bisque;
+        letter-spacing: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><h4>Plan A Trip</h4></div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Plan a trip</a>
+          <a href="#">view</a>
+        </div>
+        <div class="register">
+          <a href="#">register</a>
+        </div>
+      </nav>
+      <selection class="h-txt">
+        <span>Enjoy</span>
+        <h1>Internationla travel agency</h1>
+        <br />
+        <a href="#">Book ur trip</a>
+      </selection>
+    </header>
+  </body>
+</html>
